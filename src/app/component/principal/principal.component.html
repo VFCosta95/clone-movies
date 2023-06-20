@@ -2,9 +2,10 @@
     <app-menu></app-menu>
 <section style="background-color: black; color: antiquewhite;">
     
-    <div class="container-pricipal container-fluid" >
+    <div class="container-principal container-fluid" >
         
         <div class="box-one container-fluid" *ngFor="let i of data">
+            
             <div class="box-two">
                 <img class="image" src="https://image.tmdb.org/t/p/w500/{{i.poster_path}}" alt="teste">
                 <div class="coll">
@@ -14,11 +15,14 @@
                     <p style="text-align: center;">{{ i.release_date }}</p>
                 </div>
             </div>
+
             <h2>{{ i.title }}</h2>
             <div class="but">
             <p>{{ i.overview }}</p>
             </div>
+
         </div>
+        
 
     </div>
 </section>

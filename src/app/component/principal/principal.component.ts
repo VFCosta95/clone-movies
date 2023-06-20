@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ServiceOneService } from 'src/app/service/service-one.service'
-
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-principal',
@@ -10,24 +10,21 @@ import { ServiceOneService } from 'src/app/service/service-one.service'
 export class PrincipalComponent implements OnInit {
   
   data:any
-  image:any
-
-  constructor(private apiService: ServiceOneService){ }
+  
+  constructor(private apiService: ServiceOneService, private router:Router){ }
 
   ngOnInit(): void {
-    
-    this.apiService.makeApiCall()
-    .then(response => {
-      console.log(response);
-      this.data = response.results
-      
-      console.log(response.results.id)
-
-    })
-
-    .catch(err => {
-      console.error(err);
-    });
+    this.getItens()
   }
+
+  getItens(){
+    this.apiService.makeApiCall()
+      .then(res => {
+        this.data = res.results
+        console.log(this.data)
+      })
+      .catch(() => console.error)
+    }
+
 
 }

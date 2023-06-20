@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment'
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 
 
 @Injectable({
@@ -16,9 +16,12 @@ export class ServiceOneService {
 makeApiCall(): Promise<any> {
   const url = `${environment.apiKey}`
   
-  return this.http.get(`${url}`, /*options*/).toPromise()
-    
-    
+  return this.http.get(`${url}`, /*options*/).toPromise()   
+}
+
+getDocumentByReference(title: string | null): Promise<any> {
+  const url = `${environment.apiKey}/${title}`;
+  return this.http.get(url).toPromise();
 }
 
 dados:object | undefined

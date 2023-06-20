@@ -11,7 +11,8 @@ import { BoxTwoComponent } from './component/home/box-two/box-two.component';
 import { BoxThreeComponent } from './component/home/box-three/box-three.component';
 import { BoxFourComponent } from './component/home/box-four/box-four.component';
 import { FooterComponent } from './component/home/footer/footer.component';
-import { MenuComponent } from './component/home/menu/menu.component'
+import { MenuComponent } from './component/home/menu/menu.component';
+import { ContentOneComponent } from './pages/content-one/content-one.component'
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { MenuComponent } from './component/home/menu/menu.component'
     BoxThreeComponent,
     BoxFourComponent,
     FooterComponent,
-    MenuComponent
+    MenuComponent,
+    ContentOneComponent
   ],
   imports: [
     BrowserModule,

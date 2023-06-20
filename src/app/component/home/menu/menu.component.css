@@ -20,3 +20,15 @@ a:hover{
 .container-fluid{
     background-color: black;
 }
+@media (max-width: 1440px) {
+    .coll{
+    display: flex;
+       flex-direction:column ;
+       justify-content: center;
+       align-items: start;
+    }
+    a{
+        margin-left: 0;
+        padding-bottom: 10px;
+    }
+}

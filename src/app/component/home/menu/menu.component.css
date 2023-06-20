@@ -1,0 +1,22 @@
+.coll{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 120px 0px;
+}
+a{
+    text-decoration: none;
+    color: #840028;
+    font-size: 40px;
+    font-weight: 500;
+    margin-left: 80px;
+}
+a:hover{
+    font-size: 45px;
+    font-weight: bolder;
+}
+
+.container-fluid{
+    background-color: black;
+}

@@ -1,0 +1,9 @@
+div{
+    background-color: black;
+    color: azure;
+    text-align: end;
+    height: 80px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}

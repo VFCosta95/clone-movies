@@ -1,0 +1,35 @@
+.container-fluid{
+    margin: 120px 0px;
+}
+.coll{
+    display: flex;
+    flex-direction: row;
+}
+img{
+    width: 400px;
+    height: 500px;
+}
+
+.text{
+    margin-right: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+}
+
+h1{
+    color: #FAA21B;
+    font-size: 54px;
+    margin: 40px 0px;
+    text-shadow: 2px 2px darkslategray;
+}
+
+h4{
+    color: white;
+}
+@media (max-width: 767px) {
+    img{
+        display: none;
+    }
+  }
